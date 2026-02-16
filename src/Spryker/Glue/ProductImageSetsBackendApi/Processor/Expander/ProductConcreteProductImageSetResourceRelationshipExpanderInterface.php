@@ -12,7 +12,7 @@ use Generated\Shared\Transfer\GlueRequestTransfer;
 interface ProductConcreteProductImageSetResourceRelationshipExpanderInterface
 {
     /**
-     * @param list<\Generated\Shared\Transfer\GlueResourceTransfer> $glueResourceTransfers
+     * @param array<\Generated\Shared\Transfer\GlueResourceTransfer> $glueResourceTransfers
      * @param \Generated\Shared\Transfer\GlueRequestTransfer $glueRequestTransfer
      *
      * @return void

@@ -10,9 +10,9 @@ namespace Spryker\Glue\ProductImageSetsBackendApi\Processor\Filter;
 interface ConcreteProductsResourceFilterInterface
 {
     /**
-     * @param list<\Generated\Shared\Transfer\GlueResourceTransfer> $glueResourceTransfers
+     * @param array<\Generated\Shared\Transfer\GlueResourceTransfer> $glueResourceTransfers
      *
-     * @return list<\Generated\Shared\Transfer\GlueResourceTransfer>
+     * @return array<\Generated\Shared\Transfer\GlueResourceTransfer>
      */
     public function filterConcreteProductResources(array $glueResourceTransfers): array;
 }

@@ -36,7 +36,7 @@ class ProductConcreteProductImageSetResourceRelationshipExpander implements Prod
     }
 
     /**
-     * @param list<\Generated\Shared\Transfer\GlueResourceTransfer> $glueResourceTransfers
+     * @param array<\Generated\Shared\Transfer\GlueResourceTransfer> $glueResourceTransfers
      * @param \Generated\Shared\Transfer\GlueRequestTransfer $glueRequestTransfer
      *
      * @return void
@@ -56,7 +56,7 @@ class ProductConcreteProductImageSetResourceRelationshipExpander implements Prod
     }
 
     /**
-     * @param list<\Generated\Shared\Transfer\GlueResourceTransfer> $glueResourceTransfers
+     * @param array<\Generated\Shared\Transfer\GlueResourceTransfer> $glueResourceTransfers
      * @param array<string, \Generated\Shared\Transfer\GlueRelationshipTransfer> $productImageSetRelationshipTransfersIndexedBySku
      *
      * @return void
@@ -77,7 +77,7 @@ class ProductConcreteProductImageSetResourceRelationshipExpander implements Prod
     }
 
     /**
-     * @param list<\Generated\Shared\Transfer\GlueResourceTransfer> $glueResourceTransfers
+     * @param array<\Generated\Shared\Transfer\GlueResourceTransfer> $glueResourceTransfers
      *
      * @return list<string>
      */

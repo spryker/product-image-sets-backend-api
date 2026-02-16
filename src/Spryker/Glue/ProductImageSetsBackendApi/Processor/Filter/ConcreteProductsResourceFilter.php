@@ -19,9 +19,9 @@ class ConcreteProductsResourceFilter implements ConcreteProductsResourceFilterIn
     protected const RESOURCE_CONCRETE_PRODUCTS = 'concrete-products';
 
     /**
-     * @param list<\Generated\Shared\Transfer\GlueResourceTransfer> $glueResourceTransfers
+     * @param array<\Generated\Shared\Transfer\GlueResourceTransfer> $glueResourceTransfers
      *
-     * @return list<\Generated\Shared\Transfer\GlueResourceTransfer>
+     * @return array<\Generated\Shared\Transfer\GlueResourceTransfer>
      */
     public function filterConcreteProductResources(array $glueResourceTransfers): array
     {
