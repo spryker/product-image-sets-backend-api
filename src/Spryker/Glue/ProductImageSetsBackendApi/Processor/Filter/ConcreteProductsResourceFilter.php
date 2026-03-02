@@ -37,11 +37,6 @@ class ConcreteProductsResourceFilter implements ConcreteProductsResourceFilterIn
         return $concreteProductsResourceTransfers;
     }
 
-    /**
-     * @param \Generated\Shared\Transfer\GlueResourceTransfer $glueResourceTransfer
-     *
-     * @return bool
-     */
     protected function isApplicableConcreteProductsResource(
         GlueResourceTransfer $glueResourceTransfer
     ): bool {

@@ -66,12 +66,6 @@ class ProductImageSetResourceMapper implements ProductImageSetResourceMapperInte
             ->setAttributes($productImageSetsBackendApiAttributesTransfer);
     }
 
-    /**
-     * @param \Generated\Shared\Transfer\ProductImageSetBackendApiAttributesTransfer $productImageSetBackendApiAttributesTransfer
-     * @param \Generated\Shared\Transfer\ProductImageSetTransfer $productImageSetTransfer
-     *
-     * @return \Generated\Shared\Transfer\ProductImageSetBackendApiAttributesTransfer
-     */
     protected function mapProductImageTransfersToProductImageSetBackendApiAttributesTransfer(
         ProductImageSetBackendApiAttributesTransfer $productImageSetBackendApiAttributesTransfer,
         ProductImageSetTransfer $productImageSetTransfer

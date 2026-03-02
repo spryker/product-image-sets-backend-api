@@ -25,9 +25,6 @@ use Spryker\Glue\ProductImageSetsBackendApi\Processor\Reader\ProductImageSetReso
  */
 class ProductImageSetsBackendApiFactory extends AbstractFactory
 {
-    /**
-     * @return \Spryker\Glue\ProductImageSetsBackendApi\Processor\Reader\ProductImageSetResourceReaderInterface
-     */
     public function createProductImageSetResourceReader(): ProductImageSetResourceReaderInterface
     {
         return new ProductImageSetResourceReader(
@@ -36,9 +33,6 @@ class ProductImageSetsBackendApiFactory extends AbstractFactory
         );
     }
 
-    /**
-     * @return \Spryker\Glue\ProductImageSetsBackendApi\Processor\Expander\ProductConcreteProductImageSetResourceRelationshipExpanderInterface
-     */
     public function createProductConcreteProductImageSetResourceRelationshipExpander(): ProductConcreteProductImageSetResourceRelationshipExpanderInterface
     {
         return new ProductConcreteProductImageSetResourceRelationshipExpander(
@@ -47,9 +41,6 @@ class ProductImageSetsBackendApiFactory extends AbstractFactory
         );
     }
 
-    /**
-     * @return \Spryker\Glue\ProductImageSetsBackendApi\Processor\Reader\ProductConcreteProductImageSetResourceRelationshipReaderInterface
-     */
     public function createProductConcreteProductImageSetResourceRelationshipReader(): ProductConcreteProductImageSetResourceRelationshipReaderInterface
     {
         return new ProductConcreteProductImageSetResourceRelationshipReader(
@@ -57,25 +48,16 @@ class ProductImageSetsBackendApiFactory extends AbstractFactory
         );
     }
 
-    /**
-     * @return \Spryker\Glue\ProductImageSetsBackendApi\Processor\Filter\ConcreteProductsResourceFilterInterface
-     */
     public function createConcreteProductsResourceFilter(): ConcreteProductsResourceFilterInterface
     {
         return new ConcreteProductsResourceFilter();
     }
 
-    /**
-     * @return \Spryker\Glue\ProductImageSetsBackendApi\Processor\Mapper\ProductImageSetResourceMapperInterface
-     */
     public function createProductImageSetResourceMapper(): ProductImageSetResourceMapperInterface
     {
         return new ProductImageSetResourceMapper();
     }
 
-    /**
-     * @return \Spryker\Glue\ProductImageSetsBackendApi\Dependency\Facade\ProductImageSetsBackendApiToProductImageFacadeInterface
-     */
     public function getProductImageFacade(): ProductImageSetsBackendApiToProductImageFacadeInterface
     {
         return $this->getProvidedDependency(ProductImageSetsBackendApiDependencyProvider::FACADE_PRODUCT_IMAGE);

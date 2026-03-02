@@ -25,10 +25,6 @@ class ProductImageSetResourceReader implements ProductImageSetResourceReaderInte
      */
     protected ProductImageSetResourceMapperInterface $productImageSetResourceMapper;
 
-    /**
-     * @param \Spryker\Glue\ProductImageSetsBackendApi\Dependency\Facade\ProductImageSetsBackendApiToProductImageFacadeInterface $productImageFacade
-     * @param \Spryker\Glue\ProductImageSetsBackendApi\Processor\Mapper\ProductImageSetResourceMapperInterface $productImageSetResourceMapper
-     */
     public function __construct(
         ProductImageSetsBackendApiToProductImageFacadeInterface $productImageFacade,
         ProductImageSetResourceMapperInterface $productImageSetResourceMapper
@@ -37,11 +33,6 @@ class ProductImageSetResourceReader implements ProductImageSetResourceReaderInte
         $this->productImageSetResourceMapper = $productImageSetResourceMapper;
     }
 
-    /**
-     * @param \Generated\Shared\Transfer\ProductImageSetCriteriaTransfer $productImageSetCriteriaTransfer
-     *
-     * @return \Generated\Shared\Transfer\ProductImageSetResourceCollectionTransfer
-     */
     public function getConcreteProductImageSetResourceCollection(
         ProductImageSetCriteriaTransfer $productImageSetCriteriaTransfer
     ): ProductImageSetResourceCollectionTransfer {

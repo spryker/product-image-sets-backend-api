@@ -19,9 +19,6 @@ class ProductConcreteProductImageSetResourceRelationshipReader implements Produc
      */
     protected ProductImageSetResourceReaderInterface $imageSetResourceReader;
 
-    /**
-     * @param \Spryker\Glue\ProductImageSetsBackendApi\Processor\Reader\ProductImageSetResourceReaderInterface $imageSetResourceReader
-     */
     public function __construct(ProductImageSetResourceReaderInterface $imageSetResourceReader)
     {
         $this->imageSetResourceReader = $imageSetResourceReader;

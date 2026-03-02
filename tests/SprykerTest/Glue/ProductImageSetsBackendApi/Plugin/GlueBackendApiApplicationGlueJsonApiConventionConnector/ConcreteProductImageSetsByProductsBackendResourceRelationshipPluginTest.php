@@ -40,9 +40,6 @@ class ConcreteProductImageSetsByProductsBackendResourceRelationshipPluginTest ex
      */
     protected ProductImageSetsBackendApiTester $tester;
 
-    /**
-     * @return void
-     */
     public function testGetRelationshipResourceTypeShouldReturnCorrectType(): void
     {
         // Act
@@ -53,9 +50,6 @@ class ConcreteProductImageSetsByProductsBackendResourceRelationshipPluginTest ex
         $this->assertSame(static::RESOURCE_CONCRETE_PRODUCT_IMAGE_SETS, $relationshipResourceType);
     }
 
-    /**
-     * @return void
-     */
     public function testAddRelationshipsShouldAddProductImageSetsRelationshipToGlueResourceTransfer(): void
     {
         // Arrange
@@ -79,9 +73,6 @@ class ConcreteProductImageSetsByProductsBackendResourceRelationshipPluginTest ex
         $this->assertCount(1, $glueResourceTransfers[0]->getRelationships());
     }
 
-    /**
-     * @return void
-     */
     public function testAddRelationshipsShouldShouldSkipExpansionDueToWrongResourceType(): void
     {
         // Arrange
@@ -101,9 +92,6 @@ class ConcreteProductImageSetsByProductsBackendResourceRelationshipPluginTest ex
         $this->assertCount(0, $glueResourceTransfers[0]->getRelationships());
     }
 
-    /**
-     * @return void
-     */
     public function testAddRelationshipsShouldAddCorrectProductImageSetRelationshipId(): void
     {
         // Arrange
@@ -131,9 +119,6 @@ class ConcreteProductImageSetsByProductsBackendResourceRelationshipPluginTest ex
         $this->assertSame($productConcreteTransfer->getSku(), $glueResourceTransfer->getId());
     }
 
-    /**
-     * @return void
-     */
     public function testAddRelationshipsShouldAddCorrectProductImageSetRelationshipType(): void
     {
         // Arrange
@@ -161,9 +146,6 @@ class ConcreteProductImageSetsByProductsBackendResourceRelationshipPluginTest ex
         $this->assertSame(static::RESOURCE_CONCRETE_PRODUCT_IMAGE_SETS, $glueResourceTransfer->getType());
     }
 
-    /**
-     * @return void
-     */
     public function testAddRelationshipsShouldAddCorrectProductImageSetRelationshipAttributes(): void
     {
         // Arrange
@@ -199,9 +181,6 @@ class ConcreteProductImageSetsByProductsBackendResourceRelationshipPluginTest ex
         $this->assertCount(2, $productImageSetBackendApiAttributesTransfer->getImages());
     }
 
-    /**
-     * @return void
-     */
     public function testAddRelationshipsShouldAddProductImageSetsRelationshipToGlueResourceFilteredByLocale(): void
     {
         // Arrange

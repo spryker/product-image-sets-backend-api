@@ -21,11 +21,6 @@ class ProductImageSetsBackendApiDependencyProvider extends AbstractBundleDepende
      */
     public const FACADE_PRODUCT_IMAGE = 'FACADE_PRODUCT_IMAGE';
 
-    /**
-     * @param \Spryker\Glue\Kernel\Backend\Container $container
-     *
-     * @return \Spryker\Glue\Kernel\Backend\Container
-     */
     public function provideBackendDependencies(Container $container): Container
     {
         $container = parent::provideBackendDependencies($container);
@@ -34,11 +29,6 @@ class ProductImageSetsBackendApiDependencyProvider extends AbstractBundleDepende
         return $container;
     }
 
-    /**
-     * @param \Spryker\Glue\Kernel\Backend\Container $container
-     *
-     * @return \Spryker\Glue\Kernel\Backend\Container
-     */
     protected function addProductImageFacade(Container $container): Container
     {
         $container->set(static::FACADE_PRODUCT_IMAGE, function (Container $container) {

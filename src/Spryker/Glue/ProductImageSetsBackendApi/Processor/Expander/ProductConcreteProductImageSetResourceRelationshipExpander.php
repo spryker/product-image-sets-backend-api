@@ -23,10 +23,6 @@ class ProductConcreteProductImageSetResourceRelationshipExpander implements Prod
      */
     protected ConcreteProductsResourceFilterInterface $concreteProductsResourceFilter;
 
-    /**
-     * @param \Spryker\Glue\ProductImageSetsBackendApi\Processor\Reader\ProductConcreteProductImageSetResourceRelationshipReaderInterface $productConcreteProductImageSetResourceRelationshipReader
-     * @param \Spryker\Glue\ProductImageSetsBackendApi\Processor\Filter\ConcreteProductsResourceFilterInterface $concreteProductsResourceFilter
-     */
     public function __construct(
         ProductConcreteProductImageSetResourceRelationshipReaderInterface $productConcreteProductImageSetResourceRelationshipReader,
         ConcreteProductsResourceFilterInterface $concreteProductsResourceFilter

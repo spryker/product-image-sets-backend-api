@@ -12,11 +12,6 @@ use Generated\Shared\Transfer\ProductImageSetResourceCollectionTransfer;
 
 interface ProductImageSetResourceReaderInterface
 {
-    /**
-     * @param \Generated\Shared\Transfer\ProductImageSetCriteriaTransfer $productImageSetCriteriaTransfer
-     *
-     * @return \Generated\Shared\Transfer\ProductImageSetResourceCollectionTransfer
-     */
     public function getConcreteProductImageSetResourceCollection(
         ProductImageSetCriteriaTransfer $productImageSetCriteriaTransfer
     ): ProductImageSetResourceCollectionTransfer;

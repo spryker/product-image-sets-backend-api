@@ -39,11 +39,6 @@ class ProductImageSetsBackendApiTester extends Actor
      */
     protected const RESOURCE_CONCRETE_PRODUCTS = 'concrete-products';
 
-    /**
-     * @param \Generated\Shared\Transfer\ProductConcreteTransfer $productConcreteTransfer
-     *
-     * @return \Generated\Shared\Transfer\GlueResourceTransfer
-     */
     public function createProductConcreteResource(
         ProductConcreteTransfer $productConcreteTransfer
     ): GlueResourceTransfer {
